@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		10E29E6724D6C01B00A6B50F /* HybseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29E6624D6C01B00A6B50F /* HybseApp.swift */; };
-		10E29E6924D6C01B00A6B50F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29E6824D6C01B00A6B50F /* ContentView.swift */; };
+		10E29E6924D6C01B00A6B50F /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29E6824D6C01B00A6B50F /* LandingView.swift */; };
 		10E29E6B24D6C01D00A6B50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E29E6A24D6C01D00A6B50F /* Assets.xcassets */; };
 		10E29E6E24D6C01D00A6B50F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E29E6D24D6C01D00A6B50F /* Preview Assets.xcassets */; };
+		10E29E7724D6EAE200A6B50F /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29E7624D6EAE200A6B50F /* PrimaryButtonStyle.swift */; };
+		10E29E7924D6EBD100A6B50F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29E7824D6EBD100A6B50F /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10E29E6324D6C01B00A6B50F /* Hybse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hybse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E29E6624D6C01B00A6B50F /* HybseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybseApp.swift; sourceTree = "<group>"; };
-		10E29E6824D6C01B00A6B50F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		10E29E6824D6C01B00A6B50F /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		10E29E6A24D6C01D00A6B50F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10E29E6D24D6C01D00A6B50F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		10E29E6F24D6C01D00A6B50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E29E7624D6EAE200A6B50F /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		10E29E7824D6EBD100A6B50F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,11 @@
 			isa = PBXGroup;
 			children = (
 				10E29E6624D6C01B00A6B50F /* HybseApp.swift */,
-				10E29E6824D6C01B00A6B50F /* ContentView.swift */,
+				10E29E6824D6C01B00A6B50F /* LandingView.swift */,
 				10E29E6A24D6C01D00A6B50F /* Assets.xcassets */,
 				10E29E6F24D6C01D00A6B50F /* Info.plist */,
+				10E29E7A24D6EC7000A6B50F /* Styles */,
+				10E29E7524D6EAC800A6B50F /* Extensions */,
 				10E29E6C24D6C01D00A6B50F /* Preview Content */,
 			);
 			path = Hybse;
@@ -67,6 +73,22 @@
 				10E29E6D24D6C01D00A6B50F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		10E29E7524D6EAC800A6B50F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				10E29E7824D6EBD100A6B50F /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		10E29E7A24D6EC7000A6B50F /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				10E29E7624D6EAE200A6B50F /* PrimaryButtonStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10E29E6924D6C01B00A6B50F /* ContentView.swift in Sources */,
+				10E29E7724D6EAE200A6B50F /* PrimaryButtonStyle.swift in Sources */,
+				10E29E6924D6C01B00A6B50F /* LandingView.swift in Sources */,
 				10E29E6724D6C01B00A6B50F /* HybseApp.swift in Sources */,
+				10E29E7924D6EBD100A6B50F /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
