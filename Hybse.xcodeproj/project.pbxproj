@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100AA9FE24DC579F0089150C /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100AA9FD24DC579F0089150C /* CreateView.swift */; };
+		100AAA0024DC58220089150C /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100AA9FF24DC58220089150C /* DropdownView.swift */; };
+		100AAA0224DC5BEE0089150C /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100AAA0124DC5BEE0089150C /* RemindView.swift */; };
 		10E29E6724D6C01B00A6B50F /* HybseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29E6624D6C01B00A6B50F /* HybseApp.swift */; };
 		10E29E6924D6C01B00A6B50F /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E29E6824D6C01B00A6B50F /* LandingView.swift */; };
 		10E29E6B24D6C01D00A6B50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E29E6A24D6C01D00A6B50F /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100AA9FD24DC579F0089150C /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		100AA9FF24DC58220089150C /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
+		100AAA0124DC5BEE0089150C /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 		10E29E6324D6C01B00A6B50F /* Hybse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hybse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E29E6624D6C01B00A6B50F /* HybseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybseApp.swift; sourceTree = "<group>"; };
 		10E29E6824D6C01B00A6B50F /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				10E29E6624D6C01B00A6B50F /* HybseApp.swift */,
+				100AA9FF24DC58220089150C /* DropdownView.swift */,
+				100AA9FD24DC579F0089150C /* CreateView.swift */,
+				100AAA0124DC5BEE0089150C /* RemindView.swift */,
 				10E29E6824D6C01B00A6B50F /* LandingView.swift */,
 				10E29E6A24D6C01D00A6B50F /* Assets.xcassets */,
 				10E29E6F24D6C01D00A6B50F /* Info.plist */,
@@ -164,6 +173,9 @@
 				10E29E6924D6C01B00A6B50F /* LandingView.swift in Sources */,
 				10E29E6724D6C01B00A6B50F /* HybseApp.swift in Sources */,
 				10E29E7924D6EBD100A6B50F /* Color+Extension.swift in Sources */,
+				100AAA0224DC5BEE0089150C /* RemindView.swift in Sources */,
+				100AA9FE24DC579F0089150C /* CreateView.swift in Sources */,
+				100AAA0024DC58220089150C /* DropdownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

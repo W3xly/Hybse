@@ -8,35 +8,47 @@
 import SwiftUI
 
 struct LandingView: View {
+    
+    @State private var isActive: Bool = false
+    
     var body: some View {
-        GeometryReader { geo in
-            VStack {
-                Spacer().frame(height: geo.size.height * 0.4)
-                Text("Hybse")
-                    .font(.system(size: 64, weight: .medium))
-                    .foregroundColor(.white)
-                Spacer()
-                Button(action: {}) {
-                    HStack(spacing: 10) {
-                        Spacer()
-                        Image(systemName: "plus.circle")
-                        Text("Create a challenge")
-                        Spacer()
-                    }//END: HStack
-                    .font(.system(size: 24, weight: .semibold))
-                    .foregroundColor(.white)
-                }.buttonStyle(PrimaryButtonStyle())
-                .padding(.horizontal, 15)
-            } //END: VStack
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                Image("landingBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .overlay(Color.black.opacity(0.2))
-                    .edgesIgnoringSafeArea(.all)
-            )
-        }//END: GeometryReader
+        NavigationView {
+            GeometryReader { geo in
+                VStack {
+                    Spacer().frame(height: geo.size.height * 0.4)
+                    Text("Hybse")
+                        .font(.system(size: 64, weight: .medium))
+                        .foregroundColor(.white)
+                    Spacer()
+                    NavigationLink(destination: CreateView(), isActive: $isActive) {
+                        Button(action: {
+                            isActive = true
+                        }) {
+                            HStack(spacing: 10) {
+                                Spacer()
+                                Image(systemName: "plus.circle")
+                                Text("Create a challenge")
+                                Spacer()
+                            }//END: HStack
+                            .font(.system(size: 24, weight: .semibold))
+                            .foregroundColor(.white)
+                        }//END: Button
+                        .buttonStyle(PrimaryButtonStyle())
+                        .padding(15)
+                    }
+                } //END: VStack
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(
+                    Image("landingBackground")
+                        .resizable()
+                        .scaledToFill()
+                        .overlay(Color.black.opacity(0.2))
+                        .frame(width: geo.size.width)
+                        .edgesIgnoringSafeArea(.all)
+                )
+            }//END: GeometryReader
+        }//END: NavigationView
+        .accentColor(.primary)
     }
 }
 
